@@ -1,5 +1,5 @@
 const apiKey = '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';
-const HF_API_KEY = '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';
+const HF_API_KEY = '';
 
 const chatbox = document.getElementById('chatbox');
 const chatForm = document.getElementById('chat-form');
