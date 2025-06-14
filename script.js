@@ -158,7 +158,7 @@ chatForm.addEventListener('submit', async (e) => {
       body: JSON.stringify({
         model: 'meta-llama/llama-4-scout-17b-16e-instruct',
         messages: chatHistory,
-        max_tokens: 1024,
+        max_tokens: 1000,
         temperature: 0.4
       })
     });
