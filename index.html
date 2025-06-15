@@ -15,29 +15,6 @@
   </script>
 
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .image-result {
-      margin: 10px 0;
-      text-align: center;
-    }
-    .image-result img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 4px solid #ccc;
-      border-top: 4px solid #00d8ff;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 20px auto;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
 </head>
 <body>
 
@@ -50,15 +27,21 @@
   <h1 class="title">ChaTBoT - X.1.0</h1>
 
   <!-- Chat display -->
-  <div id="chatbox" class="chatbox">
-    <!-- Messages and images will appear here -->
-  </div>
+  <div id="chatbox" class="chatbox"></div>
 
   <!-- Form to send message -->
   <form id="chat-form" class="chat-form">
     <input type="text" id="userInput" placeholder="Type your message ..." autocomplete="off" />
     <button type="submit">Send</button>
   </form>
+
+  <!-- bKash Donation Popup (HTML Only) -->
+  <div id="bkash-popup">
+    <div class="cry-emoji">😭</div>
+    <h2>Please support with bKash</h2>
+    <p>Send to: <strong id="bkash-number">01829865733</strong></p>
+    <button onclick="copyBkashNumber()">📋 Copy Number</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
