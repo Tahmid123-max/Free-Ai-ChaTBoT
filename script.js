@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = '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';
 const HF_API_KEY = ''; // Insert HuggingFace API Key here
 
 const chatbox = document.getElementById('chatbox');
