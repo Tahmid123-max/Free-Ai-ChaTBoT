@@ -1,4 +1,4 @@
-const apiKey = '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';
+const apiKey = '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';
 const HF_API_KEY = '';
 
 const chatbox = document.getElementById('chatbox');
