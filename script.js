@@ -7,13 +7,9 @@ const userInput = document.getElementById('userInput');
 window.addEventListener('load', () => {
   const loadingScreen = document.getElementById('loading-screen');
   if (loadingScreen) {
-    setTimeout(() => {
-      loadingScreen.style.transition = 'opacity 0.5s ease';
-      loadingScreen.style.opacity = '0';
       setTimeout(() => {
-        loadingScreen.style.display = 'none';
-      }, 500);
-    }, 1000);
+  loadingScreen.classList.add('hide');
+}, 1000);
   }
 });
 
