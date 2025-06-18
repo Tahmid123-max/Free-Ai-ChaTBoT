@@ -24,7 +24,7 @@ const chatHistory = [
 ];
 
 function censorBadWords(text) {
-  const badWords = ['madarchod', 'bhenchod', 'chutiya', 'lund', 'gandu', 'bhosdike', 'randi', 'kill', 'chud', 'bici', 'বিচি', 'bitch', 'nude', 'dick', 'pussy', 'fucking', 'hagu', 'mc', 'bc', 'fuck', 'kutta', 'suck', 'magi', 'bolod', 'khanki', 'rubbish', 'madartek', '69', 'xxx', 'sex', 'xnxx', 'pornhub', 'sexy', 'pornn', 'Ahh ahh ahh', 'Hack', 'hacker', 'hacked', 'boob', 'khali ghor', 'natkir', 'bokacoda', 'chudiya', 'fack', 'hawoa', 'behenchod', 'bal', 'Nunu', 'বাল', 'মাদারচোদ', 'কুত্তার বাচ্চা', 'মাল', 'মাদারটেক', 'panel', 'gu', 'sona', 'hawa', 'bhosadike', 'awami lig', 'awami league', 'shibal', 'khanshumida', 'ruscle', 'pagol', 'protibondi', 'porn', 'gand', 'rape', 'raped'];
+  const badWords = ['madarchod', 'bhenchod', 'chutiya', 'lund', 'gandu', 'bhosdike', 'randi', 'kill', 'chud', 'bici', 'বিচি', 'bitch', 'nude', 'dick', 'pussy', 'fucking', 'hagu', 'mc', 'bc', 'fuck', 'kutta', 'suck', 'magi', 'bolod', 'khanki', 'rubbish', 'madartek', '69', 'xxx', 'sex', 'xnxx', 'pornhub', 'sexy', 'pornn', 'Ahh ahh ahh', 'Hack', 'hacker', 'hacked', 'boob', 'khali ghor', 'natkir', 'bokacoda', 'chudiya', 'fack', 'hawoa', 'behenchod', 'bal', 'Nunu', 'বাল', 'মাদারচোদ', 'কুত্তার বাচ্চা', 'মাল', 'মাদারটেক', 'panel', 'gu', 'sona', 'hawa', 'bhosadike', 'awami lig', 'awami league', 'shibal', 'khanshumida', 'ruscle', 'pagol', 'protibondi', 'porn', 'gand', 'rape', 'raped', 'raping', 'mg', ];
 
   const regex = new RegExp(`\\b(${badWords.join('|')})\\b`, 'gi');
   return text.replace(regex, (match) => match[0] + '*'.repeat(match.length - 2) + match[match.length - 1]);
